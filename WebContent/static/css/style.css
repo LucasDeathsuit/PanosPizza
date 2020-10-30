@@ -1,0 +1,430 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clearfix:after{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+body{
+    margin: 0;
+}
+
+.logo img{
+    width: 50%;
+}
+
+header{
+    background-image: url(../imagens/fundopizza.jpg);
+    background-size: 100%;
+    padding: 2% 3% 0 0;
+}
+
+.pizza{
+    float: left;
+    width: 25%;
+    margin-top: 8%;
+    margin-left: -12.5%;
+    transition: transform 10s;
+}
+
+.pizza:hover{
+    transform: rotate(360deg);
+}
+
+nav{
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav ul{
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li{
+    font-size: 18px;
+    float: left;
+    list-style-type: none;
+    width: 25%;
+    text-align: center;
+}
+
+nav ul li a{
+    background-color: rgb(237, 23, 23);
+    color: white;
+    display: block;
+    padding: 2% 0 3% 0;
+    text-decoration: none;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 0 0 65% 65%;
+    transition: padding 0.6s;
+    transition: font-size 0.6s;
+}
+
+nav ul li a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    padding-top: 5%;
+    color: white;
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
+.logotipo{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin: 0% 14% 0% 14%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 25%;
+}
+
+.tipo{
+    padding: 1%;
+    width: 40%;
+}
+
+section{
+    background-image: url(../imagens/fundomadeira.jpg);
+    background-size: 100%;
+}
+
+article{
+    margin: 0% 12% 0% 12%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: rgba(255, 255, 255, 0.4)
+}
+
+.container{
+    margin: 0% 10% 0% 10%;
+}
+
+.sobre{
+    text-align: center;
+    margin: 0% 8% 0% 8%;
+    background-color: white;
+    border: solid 1px;
+}
+
+.sobre-pedido{
+    text-align: center;
+    background-color: white;
+    border: solid 1px;
+    overflow: hidden;
+}
+
+.sobre h2{
+    background-color: white;
+    margin: auto;
+    margin-top: -2%;
+    width: 80px;
+    border: solid 1px;
+}
+
+.sobre .texticulos{
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+    padding: 2% 2% 2% 4%;
+    text-align: center;
+}
+
+@media(max-width: 1000px){
+    .sobre .texticulos{
+        width: 100%;
+    }
+}
+
+.main-carousel{
+    margin: auto 8% auto 8%;
+    padding: 2%;
+    background-color: white;
+}
+
+.carousel{
+}
+
+.carousel .item img{
+    width: 100%;
+    max-height: 300px;;
+}
+
+.carousel-control{
+    opacity: 0.01;
+}
+
+.secondary-carousel-row{
+    margin: 5% 2% 0% 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 5%;
+}
+.secondary-carousel{
+    background-color: white;
+    width: 35%;
+    float: left;
+}
+
+.secondary-carousel-row .texto{
+    text-align: center;
+    margin: 0 3% 0 3%;
+}
+
+.secondary-carousel-row .texto h2{
+    margin: 0;
+}
+
+.box{
+    background-color: rgba(254, 254, 250, 0.9);
+    padding: 2% 2% 2% 2%;
+    margin: 0 2% 0 2%;
+    overflow: hidden;
+}
+
+@media (max-width: 750px){
+    .secondary-carousel-row{
+        display: block;
+    }
+}
+
+.social-media{
+    text-align: center;
+    background-image: url(../imagens/padraopizza.png);
+    background-attachment: fixed;
+    background-size: 1800px;
+    background-position-y: 55%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+@media (min-width: 1400px){
+    .social-media{
+        background-size: 100%;
+    }
+}
+
+.social-media .icon{
+    margin: auto;
+    width: 75px;
+    background-color: rgb(215, 223, 237);
+    border-radius: 25px;
+    padding: 10px;
+    transition: width 1s;
+}
+
+@media (max-width: 750px){
+    .social-media .icon{
+        width: 45px;
+    }
+}
+
+.social-media .icon:hover{
+    width: 90px;
+}
+
+.rodape{
+    background-color: rgba(255, 255, 233, 17);
+    padding-bottom: 2%;
+}
+
+footer .itens{
+    display: table;
+    margin: auto;
+    width: 80%;
+}
+
+footer .copyright{
+    display: block;
+    margin: auto;
+    padding: 1% 0 1% 0;
+    width: 20%;
+}
+
+.final{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.itens .mapa{
+    display: table-cell;
+    text-align: center;
+    width: 50%;
+}
+
+.itens .mapa ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+}
+
+.itens .localizacao{
+    display: table-cell;
+    text-align: center;
+    width: 50%;
+}
+
+@media (max-width: 750px){
+    .itens .localizacao{
+        display: none;
+    }
+}
+
+footer ul li {
+    padding-bottom: 5%;
+}
+
+form{
+    margin: 0 5% 0 5%;
+}
+
+.jumbotron{
+    margin-bottom: 0;
+}
+
+.jumbotron h2{
+    margin-left: 2%;
+}
+
+.buttons{
+    float: left;
+    width: 20%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.botao{
+    background-color: rgb(229, 229, 229);
+    border: 1px solid;
+    padding: 3%;
+    margin: 10% 1%;
+    width: 50%;
+}
+
+@media(max-width: 1100px){
+    .botao{
+        box-sizing: border-box;
+        float:left;
+        width: 18%;
+        padding: 6% 0;
+    }
+    .buttons{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+.botao:hover{
+    cursor: pointer;
+}
+
+.pedidos{
+    float: left;
+    width: 60%;
+    margin-bottom: 1%;
+    margin-right: 10%;
+}
+
+.pedidos h3{
+    text-align: center;
+}
+
+@media(max-width: 1100px){
+    .pedidos{
+        width: 96%;
+        margin: 2%;
+    }
+}
+
+.tamanho-pedido{
+    float: left;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.tamanhos{
+    float: left;
+    width: 50%;
+}
+
+.pedidos{
+    margin-top: 5%;
+    border: 1px solid;
+}
+
+.radios{
+    float: left;
+    width: 50%;
+}
+
+.opcao{
+    text-align: left;
+}
+
+.salgados{
+    float: left;
+    width: 46%;
+}
+
+.doces{
+    float: right;
+    width: 46%;
+}
+
+.sabores{
+    margin: 0% 10%;
+}
+
+.tipo-massa{
+    float: left;
+    width: 45%;
+    margin-left: 5%;
+    padding-bottom: 5%;
+}
+
+.sabor-borda{
+    float: left;
+    margin: 2% 5%;
+}
+
+.botao-enviar{
+    float:right;
+    margin: 2% 4%;
+}
+
+.tela{
+    margin: 2% 2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
